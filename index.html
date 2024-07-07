@@ -9,13 +9,19 @@
 </head>
 
 <body>
-    <h1 class="heading">Hello Welcome To Our Page</h1>
+    <label for="background_Color">Background Color:</label>
+    <input type="text" name="background_Color" id="background_Color">
 
-    <label for="background_Color">Enter color for Background Color</label>
-    <input type="color" name="background_Color" id="background_Color">
-    <label for="font_Color">Enter color for Font Color</label>
-    <input type="color" name="font_Color" id="font_Color">
+    <label for="font_Color">Font Color:</label>
+    <input type="text" name="font_Color" id="font_Color">
+
+    <label for="font_Size">Font Size:</label>
+    <input type="text" name="font_Size" id="font_Size">
+
     <button onclick="return change()">Reload</button>
+
+    <h1 class="heading" contenteditable="true"></h1>
+    <button onclick="return Save()">Save</button>
 
     <script src="main.js"></script>
 </body>
